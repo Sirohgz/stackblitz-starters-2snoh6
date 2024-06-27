@@ -1,0 +1,97 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#main-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#title {
+    font-family: 'Georgia', serif;
+    color: #ff6347;
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: 'Verdana', sans-serif;
+    color: #2e8b57;
+}
+
+p {
+    font-family: 'Tahoma', sans-serif;
+    color: #555;
+}
+
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media */
+.video-container {
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.images img {
+    width: 30%;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Quote */
+.quote {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ffe4b5;
+    border-left: 5px solid #ff4500;
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    color: #888;
+}
+
+.source {
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+/* Flexbox layout */
+.intro, .media, .gallery, .additional-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

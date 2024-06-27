@@ -5,10 +5,11 @@ body {
   background-color: #f4f4f4;
 }
 
-nav#main-nav {
-  background-color: #333;
-  padding: 10px;
-  text-align: center;
+#main-nav {
+  background-image: url('https://storage.googleapis.com/openscreenshot/R%2FQ%2Fr/L_77eXrQR.png');
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
 }
 
 nav#main-nav a {
@@ -19,9 +20,9 @@ nav#main-nav a {
   border-radius: 25px;
   background-color: #555;
   transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 5px;
 }
 
-nav#main-nav a[aria-current="page"],
 nav#main-nav a:hover {
   background-color: #ff4500;
   transform: translateY(-3px);
@@ -106,5 +107,56 @@ footer {
   #fashion .fashion-item img {
     max-width: 100%;
     margin-bottom: 10px;
+  }
+  footer {
+    font-size: 12px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .eye,
+  .glow {
+    display: none;
+  }
+}
+header {
+  display: flex;
+}
+.logoMain {
+  width: 20%;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease;
+}
+
+.logoMain:hover {
+  transform: rotate(360deg);
+  border-radius: 20px;
+  box-shadow: #000000;
+}
+
+.eye {
+  position: absolute;
+  width: 30px; /* Adjust as needed */
+  height: 30px; /* Adjust as needed */
+  border-radius: 50%;
+  pointer-events: none; /* So that the hover effect applies only to the image */
+}
+
+.glow {
+  box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.8); /* Adjust color and intensity */
+  animation: glow-animation 1.5s infinite alternate;
+}
+
+@keyframes glow-animation {
+  from {
+    box-shadow: 0 0 10px 3px rgba(255, 0, 0, 0.6);
+  }
+  to {
+    box-shadow: 0 0 20px 7px rgb(255, 0, 0, 0.6);
   }
 }
